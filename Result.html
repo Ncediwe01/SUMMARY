@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box1 {
+            width: 500px;  
+            height: 400px;
+            background-color: rgb(235, 230, 241);
+            border-radius: 25px;
+            display: flex;
+        }
+
+        .box2 {
+            width: 48%;
+            height: 100%;
+            background-color: rgb(91, 62, 250);
+            border-radius: 25px;
+        }
+
+        .box2>h5 {
+            font-size: 20px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(199, 188, 255);
+            margin-bottom: 19px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .box2>h2 {
+            font-size: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: aliceblue;
+            margin-top: 100px;
+            margin-bottom:10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: -50px;
+        }
+
+        .box2>p {
+            font-size: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: aliceblue;
+            margin-inline: 25px;
+            margin-left: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: -60px;
+
+        }
+
+        .box3 {
+            width: 52%;
+            height: 100%;
+            background-color: rgb(225, 225, 225);
+            border-radius: 25px;
+
+        }
+        .box3 >button{
+            width: 200px;
+            height: 30px;
+            background-color: rgb(48, 59, 88);
+            color: aliceblue;
+            border-radius: 10px;
+            margin-left: 30px;
+            padding-bottom: 10px;
+        }
+        .box3 >button:hover{
+          background-color: rgb(38, 38, 221);
+        }
+        .box3>p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box4 {
+            width: 240px;
+            height: 40px;
+            background-color: rgb(255, 246, 245);
+            border-radius: 10px;
+            margin-left: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 25px;
+        
+        }
+
+        .box4>p {
+            margin-right: 10px;
+            font-family: serif;
+        }
+
+        .box4>p {
+            margin-left: 40px;
+
+        }
+        
+        .box5 {
+            width: 240px;
+            height: 40px;
+            background-color: rgb(255, 251, 242);
+            border-radius: 10px;
+            margin-left: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+
+        .box5>p {
+            margin-right: 10px;
+            font-family: serif;
+        }
+
+        .box5>p {
+            margin-left: 40px;
+
+        }
+
+        .box6 {
+            width: 240px;
+            height: 40px;
+            background-color: rgb(242, 251, 250);
+            border-radius: 10px;
+            margin-left: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+
+        .box6>p {
+            margin-right: 10px;
+            font-family: serif;
+        }
+
+        .box6>p {
+            margin-left: 40px;
+
+        }
+
+        .box7 {
+            width: 240px;
+            height: 40px;
+            background-color: rgb(243, 243, 253);
+            border-radius: 10px;
+            margin-left: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 25px;
+
+
+        }
+
+        .box7>p {
+            margin-right: 10px;
+            font-family: serif;
+        }
+
+        .box7>p {
+            margin-left: 40px;
+
+        }
+        
+
+
+        .circle {
+            width: 85px;
+            height: 130px;
+            background-color: rgb(73, 32, 198);
+            border-radius: 800px;
+            margin-bottom: 100px;
+            margin-inline: 50px;
+            padding-left: 46px;
+
+
+        }
+
+        .circle>h1 {
+            font-size: 35px;
+            font-family: unset;
+            color: aliceblue;
+            margin-inline: 19px;
+            padding-right: 120px;
+            padding-top: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+
+        }
+
+        .circle>h4 {
+            font-size: 15px;
+            font-family: unset;
+            color: rgb(133, 120, 255);
+            margin-bottom: 120px;
+            padding-right: 45px;
+            padding-bottom: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+
+        }
+       @media screen and (max-width: 375px) {
+            body{
+                width: 100vw;
+                height: auto;
+            }
+            .box1{
+                flex-direction: column;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box1">
+        <div class="box2">
+            <h5>Your Result</h5>
+            <div class="circle">
+                <h1>76</h1>
+                <h4>of 100</h4>
+            </div>
+            <h2>Great</h2>
+            <p>You've scored high then 65% of
+            the people who have taken
+            these test.</p>
+        </div>
+        <div class="box3">
+            <p>Summary</p>
+            <div class="box4">
+                <img src="C:/Users/CodeTribe02/Desktop/Summary/icon-reaction.svg">
+                <p>Reaction</p>
+                <p>80/100</p>
+            </div>
+            <div class="box5">
+                <img src="C:/Users/CodeTribe02/Desktop/Summary/icon-memory.svg">
+                <p>Memory</p>
+                <p>92/100</p>
+            </div>
+            <div class="box6">
+                <img src="C:/Users/CodeTribe02/Desktop/Summary/icon-verbal.svg">
+                <P>Verbal</P>
+                <p>61/100</p>
+            </div>
+            <div class="box7">
+                <img src="C:/Users/CodeTribe02/Desktop/Summary/icon-visual.svg">
+                <p>Visual</p>
+                <p>72/100</p>
+            </div>
+            <button>Continue</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
